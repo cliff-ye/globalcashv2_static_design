@@ -314,3 +314,11 @@ a:hover {
 #loginHero {
   height: 100vh;
 }
+
+@media (max-width: 1000px) {
+  .loginModal,
+  .signupModal,
+  .signup2Modal {
+    width: 90%;
+  }
+}
