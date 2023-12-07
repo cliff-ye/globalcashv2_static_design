@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>global cash</title>
+    <link href="assets/images/icons8_rocket_take_off.ico" rel="icon" />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,600&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+
+  </head>
+  <body >
+    <div class="mainDiv">
+
+    
+
+
+      <header class="header "  bg-img bg-cover" style="background-image: url('assets/images/moja-msanii-vO9-gal54go-unsplash1.jpg')">
+      
+        <nav id="main-navbar" class="navbar navbar-dark navbar-expand-md" >
+          <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"
+              ><img
+                src="assets/images/icons8_rocket_take_off_50px.png"
+                alt=""
+              />
+              <span style="color: #444;">globalcash</span></a
+            >
+  
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a id="customer-name" class="nav-link active" aria-current="page" href="#">
+                  <img
+                    src="assets/images/icons8_male_user_30px.png"
+                    alt="Profile"
+                    class="rounded-circle"
+                  />
+                  <span >John Doe</span>
+                </a>
+              </div>
+              <div class="d-flex ms-auto" role="search">
+                <!-- <button id="logout-btn" class="btn btn-primary" type="Login">
+                  Logout
+                </button> -->
+                <a href="login.html" id="logout-btn" class="btn btn-primary">Logout</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+ <!-- <div class="container">
+          <div class="alert alert-danger text-center border border-danger mb-0">
+            <b>An error occured</b>
+          </div>
+        </div>   -->
+
+        <section class="container-fluid dashboard">
+          <div class="row no-gutters align-items-center">
+            <div class="col-lg-3 order-1 order-md-1 cards">
+              <div class="card info-card deposit-card">
+                <div class="card-body">
+                    <img src="assets/images/icons8_Cash_in_Hand_2.ico" alt="">Total Deposits
+                    <div class="ps-1 mt-3">
+                      <h6 class="totaldep">GH&#8373; 3,264.0</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 order-2 order-md-2 cards">
+              <div class="card info-card withdrawal-card">
+                <div class="card-body">
+                  <img src="assets/images/icons8_cash_withdrawal_3.ico" alt="">
+                   Total Withdrawals
+                    <div class="ps-1 mt-3">
+                      <h6 class="totalwithd">GH&#8373; - 3,264.0</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 order-3 order-md-3 cards">
+              <div class="card info-card withdrawal-card">
+                <div class="card-body">
+                  <img src="assets/images/icons8_Credit_Card_Transfer_2.ico" alt="">
+                     Total Transfers
+                    <div class="ps-1 mt-3">
+                      <h6 class="totalwithd">GH&#8373; 3,264</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 order-4 order-md-4 cards">
+              <div class="card info-card balance-card">
+                <div class="card-body">
+                  <img src="assets/images/icons8_Sales_Performance_Balance_2.ico" alt="">
+                    Balance
+                    <div class="ps-1 mt-3">
+                      <h6 class="bal">
+                        GH&#8373; 300,264.0</h6>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+      <div class="subdiv">
+      <section class="container-fluid">
+        <div class="row no-gutters align-items-center feature--btn">
+          <div class="col-lg-3 order-1 order-md-1 items ">
+            <div class="text-center d-lg-block mt-5">
+              <button class="btn" data-tab="1">
+                <img src="assets/images/icons8_wallet.ico" alt="" />
+                <p>
+                 transact <br />
+                  make safe transactions
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 order-2 order-md-2 items">
+            <div class="text-center d-lg-block mt-5">
+              <button class="btn" data-tab="2">
+                <img src="assets/images/icons8_payment_history.ico" alt="" />
+                <p>Transfer History <br />all transfers to other accounts</p>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 order-3 order-md-3 items">
+            <div class="text-center d-lg-block mt-5">
+              <button class="btn" data-tab="3">
+                <img src="assets/images/icons8_transaction_1.ico" alt="" />
+
+                <p>
+                  Transaction History <br />
+                  all transactions on account
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 order-4 order-md-4 items feature--btn">
+            <div class="text-center d-lg-block mt-5">
+              <button class="btn" data-tab="4">
+                <img src="assets/images/icons8_account.ico" alt="" />
+
+                <p>
+                   Account <br />
+                  see account details here
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+ 
+  
+    <div class="transactModal f--1 featuresModal hidden">
+      <button type="button" class="btnClose closeTransact">&times;</button>
+        <h1>Transact</h1>
+
+        <div class="transact-body mt-3 ">
+          <!-- transaction type dropdown list -->
+          <select name="transact-type" class="form-control inputlook mb-3" id="transact-type">
+            <option value="">--Select Transaction Type --</option>
+            <!-- <option value="payment">Payment</option> -->
+            <option value="transfer">Transfer to GC user</option>
+            <option value="transfer">Transfer to non GC user</option>
+            <option value="transfer">Airtime</option>
+            <option value="transfer">Bank transfer</option>
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+          </select>
+          <!-- end-->
+
+          <!-- transfer money card -->
+          <div class="card transfer-card cardlook hidden">
+              <div class="card-body">
+                <!-- form -->
+                <div class="form-group mb-2">
+                   <label for="">Account Number</label>
+                   <input type="text" name="accountHolder" class="form-control inputlook">
+                </div>
+
+                <div class="form-group mb-2">
+                  <label for="">Reference</label>
+                  <input type="text" name="accountNumber" class="form-control inputlook" >
+               </div>
+
+               <div class="form-group mb-3">
+                <label for="">Enter Amount</label>
+                <input type="text" name="accountNumber" class="form-control inputlook" >
+             </div>
+
+             <div class="form-group">
+              
+              <button id="transact" class="btn--look">Done</button>
+           </div>
+                <!-- end form -->
+              </div>
+                <!-- end transfer card body-->
+          </div>
+        <!-- end of transact card -->
+
+
+         <!-- deposit money card -->
+         <div class="card dep-card cardlook hidden">
+          <div class="card-body">
+            <!-- form -->
+            <form action="" method="">
+            <div class="form-group mb-3">
+               <label for="">Enter Amount to Deposit</label>
+               <input type="text" name="amount" class="form-control inputlook">
+            </div>
+
+         <div class="form-group ">
+          <button id="transact" class="btn--look">Done</button>
+       </div>
+      </form>
+            <!-- end form -->
+          </div>
+            <!-- end deposti card body-->
+      </div>
+    <!-- end of deposit card -->
+
+    <!-- withdraw money card -->
+    <div class="card withdraw-card cardlook hidden">
+      <div class="card-body">
+        <!-- form -->
+        <form action="" method="">
+        <div class="form-group mb-3">
+           <label for="">Enter Amount to Withdraw</label>
+           <input type="text" name="amount" class="form-control inputlook">
+        </div>
+
+     <div class="form-group ">
+      <button id="transact" class="btn--look">Done</button>
+   </div>
+  </form>
+        <!-- end form -->
+      </div>
+        <!-- end withdraw card body-->
+  </div>
+<!-- end of withdraw card -->
+
+      </div>
+    
+    </div>
+
+    <!-- <div class="withdrawModal f--2 featuresModal hidden">
+      <form action="">
+        <button type="button" class="btnClose closeWithd">&times;</button>
+        <h1>Withdraw</h1>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInputy" class="form-label"
+            >Amount</label
+          >
+          <input
+            type="number"
+            class="form-control inputlook input--withdrawAmt"
+            id="exampleFormControlInputy"
+          />
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary btn--look btn--withdraw">
+            Withdraw
+          </button>
+        </div>
+      </form>
+    </div> -->
+
+    <!-- <div class="TransferModal f--3 featuresModal hidden">
+      <form action="">
+        <button type="button" class="btnClose closeTrans">&times;</button>
+        <h1>Transfer Money</h1>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInputz" class="form-label"
+            >Transfer To</label
+          >
+          <input
+            type="text"
+            class="form-control inputlook input--transTo"
+            id="exampleFormControlInputz"
+            readonly
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlInputz" class="form-label"
+            >Amount</label
+          >
+          <input
+            type="number"
+            class="form-control inputlook input--transAmt"
+            id="exampleFormControlInpuzy"
+          />
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary btn--look btn--transfer">
+            Transfer
+          </button>
+        </div>
+      </form>
+    </div> -->
+
+     <div class="Alltransfers f--2 featuresModal hidden">
+      <button type="button" class="btnClose closeAlltransfers">&times;</button>
+
+   <section class="mt-5">
+         <form action="">
+           <h2>Recent Money Transfers</h2>
+ 
+           <table class="table">
+             <thead>
+               <tr>
+                 <th scope="col">Transaction ID</th>
+                 <th scope="col">To(Acc No.)</th>
+                 <th scope="col">Account Name</th>
+                 <th scope="col">Amount</th>
+                 <th scope="col">Reference</th>
+                 <th scope="col">Status</th>
+                 <th scope="col">Status Detail</th>
+                 <th scope="col">Date</th>
+               </tr>
+             </thead>
+             <tbody class="tbody">
+               <!-- <tr>
+                   <th scope="row"></th>
+                   <td></td>
+                   <td></td>
+                 </tr> -->
+             </tbody>
+           </table>
+         </form>
+
+        
+     </section>
+
+     <div>
+      <button class="btn--look">view all transfers</button>
+    </div>
+   </div> 
+
+    <div class="Alltransactions f--3 featuresModal hidden">
+      <button type="button" class="btnClose closeAlltransact">&times;</button>
+      <section class="container">
+     <div class="row no-gutters align-items-center">
+       <div class="col-lg-12">
+         <div class="card user-card">
+           <div class="card-body">
+             <div class="row">
+               <div class="col-lg-4 order-1 order-md-1">
+                 <div class="card user-card">
+                   <div class="card-body">
+                     <h5 class="card-title">Account Name</h5>
+                     <div class="d-flex align-items-center">
+                       <div class="card-icon">
+                         <img
+                           src="assets/images/icons8_account.ico"
+                           alt=""
+                         />
+                       </div>
+                       <div class="ps-3">
+                         <h6 class="totalwithd">Clifford Agyei</h6>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col-lg-4 order-2 order-md-2">
+                 <div class="card user-card">
+                   <div class="card-body">
+                     <h5 class="card-title">Account Number</h5>
+                     <div class="d-flex align-items-center">
+                       <div class="card-icon">
+                         <img
+                           src="assets/images/icons8_authentication_2.ico"
+                           alt=""
+                         />
+                       </div>
+                       <div class="ps-3">
+                         <h6 class="bal">xxxxxxxx</h6>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col-lg-4 order-3 order-md-3">
+                 <div class="card user-card">
+                   <div class="card-body">
+                     <h5 class="card-title">Account Balance</h5>
+                     <div class="d-flex align-items-center">
+                       <div class="card-icon">
+                         <img
+                           src="assets/images/icons8_Sales_Performance_Balance.ico"
+                           alt=""
+                         />
+                       </div>
+                       <div class="ps-3">
+                         <h6 class="bal">GH&#8373; 3,264</h6>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   </section>
+
+   <section class="mt-5">
+         <form action="">
+           <h2>All Transactions</h2>
+ 
+           <table class="table">
+             <thead>
+               <tr>
+                 <th scope="col">Transaction ID</th>
+                 <th scope="col">Account Number</th>
+                 <th scope="col">Transaction Type</th>
+                 <th scope="col">Amount</th>
+                 <th scope="col">Status</th>
+                 <th scope="col">Status Detail</th>
+                 <th scope="col">Date</th>
+               </tr>
+             </thead>
+             <tbody class="tbody">
+               <!-- <tr>
+                   <th scope="row"></th>
+                   <td></td>
+                   <td></td>
+                 </tr> -->
+             </tbody>
+           </table>
+         </form>
+     </section>
+   </div>
+
+    <div class="Accounts f--4 featuresModal hidden">
+      <button type="button" class="btnClose closeAcct">&times;</button>
+      <div class="mb-3">
+        <h1>Account Details</h1>
+      </div>
+          <!-- Account details card -->
+          <div class="card mt-3 mb-3 cardlook ">
+            <div class="card-body">
+        
+              <div class="mb-3">
+                <strong> <p>Account Name : John Doe</p></strong>
+              </div>
+
+              <div class="mb-3">
+                <strong> <p>Account Number: 123456789</p></strong>
+              </div>
+
+              <div class="mb-3">
+               <strong> <p>Account Type: Savings</p> </strong>
+              </div>
+
+              <div class="mb-3">
+               <strong> <p>Account Balanace: GH&#8373; 3,264 </p></strong>
+              </div>
+
+              <div class="mb-3">
+                <strong><p>Account Created at: 21/01/2023 19:09:98</p></strong>
+              </div>
+
+              <div >
+                <strong><p>Account Updated at: 21/01/2023 19:09:98</p></strong>
+              </div>
+            </div>
+              <!-- end account card body-->
+             
+          </div>
+          <!-- <a class="btn btn-primary btn--look" href="#">Request Statement of Account</a> -->
+      <!-- end of account card -->
+    </div>
+
+    <div class="overlay hidden"></div>
+
+   <footer class="footer">
+      <div class="container-fluid">
+        cliff-ye
+        <img src="assets/images/icons8_GitHub.ico" alt="">
+      </div>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script type="text/javascript">
+      window.addEventListener("load", function () {
+        Swal.fire("Login successful!", "", "success");
+      });
+    </script> -->
+  </body>
+</html>
